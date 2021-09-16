@@ -18,8 +18,8 @@ Para executar o projeto, você precisa ter o npm e o Node JS já instalados em s
 # Bibliotecas Externas Utilizadas
 
 ```
-3- Styled-Components
-4- Axios
+1- Styled-Components
+2- Axios
 ```
 
 
