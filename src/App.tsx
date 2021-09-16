@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Global from './UI/style/global';
+import Global from './ui/style/global';
 
 import Employees from './Pages/Employees';
 
