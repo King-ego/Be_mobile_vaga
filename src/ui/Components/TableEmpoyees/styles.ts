@@ -44,12 +44,13 @@ export const TableBody = styled.div`
     }
 
     > img {
-      max-width: 34px;
-      max-height: 35px;
-      width: auto;
-      height: auto;
-      
+      width: 34px;
+      height: initial;
+
       border-radius: 50%;
     }
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
   }
 `;
