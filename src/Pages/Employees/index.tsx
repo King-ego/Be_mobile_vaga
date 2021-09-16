@@ -4,7 +4,7 @@ import Header from "../../ui/Components/Header";
 import Description from "../../ui/Components/Description";
 import TableEmpoyees from "../../ui/Components/TableEmpoyees";
 
-import api from '../../services/api';
+import api from "../../services/api";
 
 export interface EmpoyeesProps {
   id: number;
@@ -16,21 +16,19 @@ export interface EmpoyeesProps {
 }
 
 const Employees: React.FC = () => {
-    const [empoyee, setEmpoyee] = useState<EmpoyeesProps[]>();
+  const [empoyee, setEmpoyee] = useState<EmpoyeesProps[]>();
 
-    const [value, setValue] = useState('')
+  const [value, setValue] = useState("");
 
-    useEffect(() => {
-      async function getEmpoyees() {
-        const empoyees = await api.get("/employess");
+  useEffect(() => {
+    async function getEmpoyees() {
+      const empoyees = await api.get("/employess");
 
-        console.log(empoyees.data);
+      setEmpoyee(empoyees.data);
+    }
 
-        setEmpoyee(empoyees.data);
-      }
-
-      getEmpoyees();
-    }, []);
+    getEmpoyees();
+  }, []);
   return (
     <>
       <Header firstName="Be" lastName="mobile" />
@@ -40,7 +38,7 @@ const Employees: React.FC = () => {
         placeholder="Pesquisar"
         setValue={setValue}
       />
-      
+
       <TableEmpoyees
         image="Foto"
         job="Cargo"

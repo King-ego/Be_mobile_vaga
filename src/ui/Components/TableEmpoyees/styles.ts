@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 31px 32px 0 32px;
@@ -14,13 +14,12 @@ export const TableTitle = styled.div`
 
   background: #5984c0;
 
-
   > div {
     width: 20%;
 
     color: #fff;
 
-    &:nth-child(1){
+    &:nth-child(1) {
       padding-left: 32px;
     }
   }
@@ -53,4 +52,16 @@ export const TableBody = styled.div`
   &:hover {
     background: rgba(0, 0, 0, 0.1);
   }
+`;
+
+export const TableNFound = styled.div`
+  width: 100%;
+  height: 49px;
+
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 32px 32px 0 32px;
@@ -6,14 +6,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
 `;
 
 export const TitleInfoLeft = styled.div`
   width: 139px;
   height: 28px;
 
-  h4{
+  h4 {
     font-family: Roboto;
     font-size: 28px;
   }
@@ -39,11 +38,12 @@ export const ContainerInput = styled.div`
   }
 
   button {
+    margin-left: 2px;
+    
     background: transparent;
     border: 0;
     svg {
-      height: 24px;
+      height: 14px;
     }
   }
 `;
-
