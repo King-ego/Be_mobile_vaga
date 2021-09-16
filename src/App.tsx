@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Global from './ui/style/global';
+import Global from "./ui/style/global";
 
-import Employees from './Pages/Employees';
+import Employees from "./Pages/Employees";
 
 const App: React.FC = () => {
   return (

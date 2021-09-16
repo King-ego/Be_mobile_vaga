@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { Container, FirstName, LastName } from './styles';
+import { Container, FirstName, LastName } from "./styles";
 
 interface HeaderProps {
   firstName: string;

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 
-import { Container, TableTitle, TableBody } from "./styles";
+import { Container, TableTitle, TableBody, TableNFound } from "./styles";
 
 import { EmpoyeesProps } from "../../../Pages/Employees";
 
@@ -96,7 +96,7 @@ const TableEmpoyees: React.FC<EmpoyeesInfoProps> = ({
         <div>{admission_date.toUpperCase()}</div>
         <div>{phone.toUpperCase()}</div>
       </TableTitle>
-      {empoyees?.length === 0 && <div>Not Found</div>}
+      {empoyees?.length === 0 && <TableNFound>Not Found</TableNFound>}
       {empoyees &&
         empoyees.map((empoyee) => (
           <TableBody key={empoyee.id}>
