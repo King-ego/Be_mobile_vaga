@@ -34,11 +34,13 @@ const Employees: React.FC = () => {
   return (
     <>
       <Header firstName="Be" lastName="mobile" />
+
       <Description
         titleinfo="Funcionários"
         placeholder="Pesquisar"
         setValue={setValue}
       />
+      
       <TableEmpoyees
         image="Foto"
         job="Cargo"

@@ -1,4 +1,9 @@
-import React, { useCallback, Dispatch, SetStateAction } from "react";
+import React, {
+  useCallback,
+  Dispatch,
+  SetStateAction,
+  ChangeEvent,
+} from "react";
 
 import { Container, TitleInfoLeft, ContainerInput } from "./styles";
 
@@ -14,7 +19,7 @@ const Description: React.FC<TitleInfoProps> = ({
   setValue,
 }) => {
   const jasmi = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
+    (event: ChangeEvent<HTMLInputElement>) => {
       setValue(event.target.value);
     },
     [setValue]
@@ -25,12 +30,14 @@ const Description: React.FC<TitleInfoProps> = ({
       <TitleInfoLeft>
         <h4>{titleinfo}</h4>
       </TitleInfoLeft>
+
       <ContainerInput>
         <input
           type="text"
           placeholder={placeholder}
           onChange={(event) => jasmi(event)}
         />
+
         <button>
           <svg
             width="18"
