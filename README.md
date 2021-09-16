@@ -13,7 +13,7 @@ Esta tabela contém as seguintes colunas: imagem, nome, cargo, data de admissão
 ![image](https://github.com/King-ego/assets_images_be_mobile/blob/main/table_funcionarios.png?raw=true)
 
 # Pré-requisitos
-Para realizar o teste, você precisa ter o npm e o Node JS já instalados em sua máquina.
+Para executar o projeto, você precisa ter o npm e o Node JS já instalados em sua máquina.
 
 # Bibliotecas Externas Utilizadas
 
