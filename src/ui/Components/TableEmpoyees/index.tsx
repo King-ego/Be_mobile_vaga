@@ -96,6 +96,7 @@ const TableEmpoyees: React.FC<EmpoyeesInfoProps> = ({
         <div>{admission_date.toUpperCase()}</div>
         <div>{phone.toUpperCase()}</div>
       </TableTitle>
+      {empoyees?.length === 0 && <div>Not Found</div>}
       {empoyees &&
         empoyees.map((empoyee) => (
           <TableBody key={empoyee.id}>
